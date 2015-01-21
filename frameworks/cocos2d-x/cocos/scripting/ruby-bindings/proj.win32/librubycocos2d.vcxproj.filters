@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="manual">
+      <UniqueIdentifier>{217e7438-1f30-4dc7-87ff-f0da7ff86045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="auto">
+      <UniqueIdentifier>{0d498a6d-feba-4054-9c3e-75db2251adfd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\manual\BindingHelper.cpp">
+      <Filter>manual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manual\CCRubyEngine.cpp">
+      <Filter>manual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manual\RubyBridge.cpp">
+      <Filter>manual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manual\RubyValueMap.cpp">
+      <Filter>manual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\auto\ruby_cocos2dx_auto.cpp">
+      <Filter>auto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\manual\ManualImplement.cpp">
+      <Filter>manual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\auto\ruby_cocos2dx_audioengine_auto.cpp">
+      <Filter>auto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\manual\BindingHelper.h">
+      <Filter>manual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\manual\CCRubyEngine.h">
+      <Filter>manual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\manual\RubyBridge.h">
+      <Filter>manual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\manual\RubyValueMap.h">
+      <Filter>manual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\auto\ruby_cocos2dx_auto.hpp">
+      <Filter>auto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\manual\ManualImplement.h">
+      <Filter>manual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\auto\ruby_cocos2dx_audioengine_auto.hpp">
+      <Filter>auto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\manual\manual_api.rb">
+      <Filter>manual</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,59 @@
+#set $max_arg_count     = 0
+#set $func_count    = 0
+#set $func_index    = 0
+#set $max_arg_func  = 0
+#set $min_arg_count = 99999
+#for func in $implementations
+    #if len($func.arguments) > $max_arg_count
+        #set $max_arg_count = len($func.arguments)
+        #set $max_arg_func = func
+    #end if
+    #if $func.min_args< $min_arg_count
+    	#set $min_arg_count=$func.min_args
+    #end if
+#end for
+#for func in $implementations
+    #set $staticstr=""
+    
+		#set $ret_type_name=str($func.ret_type)
+		#set $returnself=""
+		#if ($ret_type_name.startswith("cocos2d::") and $ret_type_name.endswith("*"))
+			#set $returnself="return "+$ret_type_name[9:-1]+".new"
+		#end if
+		
+		#if $static
+			#set $staticstr="self."
+		#end if		
+		#set $func_tip = "("
+		#set $func_end = "end"
+		#if func != $max_arg_func
+			#set $comment="#"
+		#else
+			#set $comment=""
+		#end if    
+    #if len($func.arguments) >= $func.min_args
+        #set $arg_count = len($func.arguments)
+        #if $arg_count >0 
+            #set $arg_index = 0
+            #for $arg in func.arguments
+            		#set $argname = $generator.api_param_name_from_native($arg.name.replace("*", "").replace("const ", ""))
+            		#set $argname = $argname+"_"+$max_arg_func.argumtntTips[$arg_index]
+            		#if $arg_index>=$min_arg_count
+            			#set $argname = $argname+"=nil"
+            		#end if
+                #if $arg_index < $arg_count - 1
+                    #set $func_tip = $func_tip + $argname + ", "
+                #else
+                    #set $func_tip = $func_tip + $argname
+                #end if
+                #set $arg_index = arg_index + 1
+            #end for
+        #end if 
+    #end if
+    #set $func_tip =  $func_tip + ")"    
+			${comment}def ${staticstr}${func_name}${func_tip}
+			${comment}$returnself
+			${comment}$func_end			
+    #set $func_index = $func_index + 1
+#end for
+

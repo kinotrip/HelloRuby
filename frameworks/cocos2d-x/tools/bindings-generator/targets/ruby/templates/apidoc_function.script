@@ -1,0 +1,45 @@
+#set $argstr=""
+#if $min_args > 0 
+    #set $count = 0
+    #for $arg in $arguments 
+        #set $argValue = "arg" + str(count)
+        #if $count>0
+        	#set $argstr=$argstr+","
+				#end if
+        #set $argstr=$argstr+$generator.api_param_name_from_native($arg.name.replace("*", "").replace("const ", ""))
+        #set $argstr=$argstr+"_"+$argumtntTips[$count]
+        #set $count = $count + 1
+    #end for
+#end if
+#set $staticstr=""
+
+#set $ret_type_name=str($ret_type)
+#set $returnself=""
+#if ($ret_type_name.startswith("cocos2d::") and $ret_type_name.endswith("*"))
+#set $returnself="return "+$ret_type_name[9:-1]+".new"
+#end if
+
+#if $static
+	#set $staticstr="self."
+#end if
+
+
+			def ${staticstr}${func_name}(${argstr})
+			$returnself
+			end
+
+		#set attr_judge = $func_name
+		#if (attr_judge.startswith('get'))
+			#set getter=attr_judge[3].lower()+attr_judge[4:]
+			def ${staticstr}${getter}(${argstr})
+			$returnself
+			end
+		#else
+			#if (attr_judge.startswith('set'))
+				#set setter=attr_judge[3].lower()+attr_judge[4:]+'='
+				#if (not $setter[0].isdigit())
+				def ${staticstr}${setter}(${argstr})
+				end
+				#end if
+			#end if
+		#end if        

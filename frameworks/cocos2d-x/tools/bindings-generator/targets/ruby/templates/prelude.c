@@ -1,0 +1,1 @@
+#set generator = $current_class.generator

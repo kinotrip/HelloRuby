@@ -1,0 +1,12 @@
+#set generator = $current_class.generator
+#set $parents_count = len($current_class.parents)
+#if $parents_count > 0
+    #set $extend_info = " < "
+    #set $parent_index = 0
+		#set $extend_info = $extend_info + $current_class.parents[0].class_name
+#else
+		#set $extend_info = ''
+#end if
+module CC
+	class ${current_class.target_class_name} ${extend_info}
+

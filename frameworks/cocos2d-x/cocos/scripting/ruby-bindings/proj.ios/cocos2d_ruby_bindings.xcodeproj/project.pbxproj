@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3B6BF9D1A3B287A007E6511 /* BindingHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B6BF951A3B287A007E6511 /* BindingHelper.cpp */; };
+		F3B6BF9E1A3B287A007E6511 /* CCRubyEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B6BF971A3B287A007E6511 /* CCRubyEngine.cpp */; };
+		F3B6BF9F1A3B287A007E6511 /* RubyBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B6BF991A3B287A007E6511 /* RubyBridge.cpp */; };
+		F3B6BFA01A3B287A007E6511 /* RubyValueMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3B6BF9B1A3B287A007E6511 /* RubyValueMap.cpp */; };
+		F3BB4CBF1A653EC7006EFEFB /* ruby_cocos2dx_audioengine_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3BB4CBB1A653EC7006EFEFB /* ruby_cocos2dx_audioengine_auto.cpp */; };
+		F3BB4CC01A653EC7006EFEFB /* ruby_cocos2dx_auto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3BB4CBD1A653EC7006EFEFB /* ruby_cocos2dx_auto.cpp */; };
+		F3BB4CC41A653EDC006EFEFB /* ManualImplement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3BB4CC21A653EDC006EFEFB /* ManualImplement.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3B6BF661A3B264B007E6511 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F3B6BF681A3B264B007E6511 /* libcocos2d_ruby_bindings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcocos2d_ruby_bindings.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B6BF951A3B287A007E6511 /* BindingHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BindingHelper.cpp; path = ../manual/BindingHelper.cpp; sourceTree = "<group>"; };
+		F3B6BF961A3B287A007E6511 /* BindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BindingHelper.h; path = ../manual/BindingHelper.h; sourceTree = "<group>"; };
+		F3B6BF971A3B287A007E6511 /* CCRubyEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCRubyEngine.cpp; path = ../manual/CCRubyEngine.cpp; sourceTree = "<group>"; };
+		F3B6BF981A3B287A007E6511 /* CCRubyEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCRubyEngine.h; path = ../manual/CCRubyEngine.h; sourceTree = "<group>"; };
+		F3B6BF991A3B287A007E6511 /* RubyBridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RubyBridge.cpp; path = ../manual/RubyBridge.cpp; sourceTree = "<group>"; };
+		F3B6BF9A1A3B287A007E6511 /* RubyBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RubyBridge.h; path = ../manual/RubyBridge.h; sourceTree = "<group>"; };
+		F3B6BF9B1A3B287A007E6511 /* RubyValueMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RubyValueMap.cpp; path = ../manual/RubyValueMap.cpp; sourceTree = "<group>"; };
+		F3B6BF9C1A3B287A007E6511 /* RubyValueMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RubyValueMap.h; path = ../manual/RubyValueMap.h; sourceTree = "<group>"; };
+		F3BB4CBB1A653EC7006EFEFB /* ruby_cocos2dx_audioengine_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ruby_cocos2dx_audioengine_auto.cpp; path = ../auto/ruby_cocos2dx_audioengine_auto.cpp; sourceTree = "<group>"; };
+		F3BB4CBC1A653EC7006EFEFB /* ruby_cocos2dx_audioengine_auto.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ruby_cocos2dx_audioengine_auto.hpp; path = ../auto/ruby_cocos2dx_audioengine_auto.hpp; sourceTree = "<group>"; };
+		F3BB4CBD1A653EC7006EFEFB /* ruby_cocos2dx_auto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ruby_cocos2dx_auto.cpp; path = ../auto/ruby_cocos2dx_auto.cpp; sourceTree = "<group>"; };
+		F3BB4CBE1A653EC7006EFEFB /* ruby_cocos2dx_auto.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ruby_cocos2dx_auto.hpp; path = ../auto/ruby_cocos2dx_auto.hpp; sourceTree = "<group>"; };
+		F3BB4CC11A653EDC006EFEFB /* manual_api.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = manual_api.rb; path = ../manual/manual_api.rb; sourceTree = "<group>"; };
+		F3BB4CC21A653EDC006EFEFB /* ManualImplement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ManualImplement.cpp; path = ../manual/ManualImplement.cpp; sourceTree = "<group>"; };
+		F3BB4CC31A653EDC006EFEFB /* ManualImplement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManualImplement.h; path = ../manual/ManualImplement.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3B6BF651A3B264B007E6511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3B6BF5F1A3B264B007E6511 = {
+			isa = PBXGroup;
+			children = (
+				F3BB4CBA1A653EB5006EFEFB /* auto */,
+				F3B6BF941A3B26EC007E6511 /* manual */,
+				F3B6BF691A3B264B007E6511 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3B6BF691A3B264B007E6511 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3B6BF681A3B264B007E6511 /* libcocos2d_ruby_bindings.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3B6BF941A3B26EC007E6511 /* manual */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB4CC11A653EDC006EFEFB /* manual_api.rb */,
+				F3BB4CC21A653EDC006EFEFB /* ManualImplement.cpp */,
+				F3BB4CC31A653EDC006EFEFB /* ManualImplement.h */,
+				F3B6BF951A3B287A007E6511 /* BindingHelper.cpp */,
+				F3B6BF961A3B287A007E6511 /* BindingHelper.h */,
+				F3B6BF971A3B287A007E6511 /* CCRubyEngine.cpp */,
+				F3B6BF981A3B287A007E6511 /* CCRubyEngine.h */,
+				F3B6BF991A3B287A007E6511 /* RubyBridge.cpp */,
+				F3B6BF9A1A3B287A007E6511 /* RubyBridge.h */,
+				F3B6BF9B1A3B287A007E6511 /* RubyValueMap.cpp */,
+				F3B6BF9C1A3B287A007E6511 /* RubyValueMap.h */,
+			);
+			name = manual;
+			sourceTree = "<group>";
+		};
+		F3BB4CBA1A653EB5006EFEFB /* auto */ = {
+			isa = PBXGroup;
+			children = (
+				F3BB4CBB1A653EC7006EFEFB /* ruby_cocos2dx_audioengine_auto.cpp */,
+				F3BB4CBC1A653EC7006EFEFB /* ruby_cocos2dx_audioengine_auto.hpp */,
+				F3BB4CBD1A653EC7006EFEFB /* ruby_cocos2dx_auto.cpp */,
+				F3BB4CBE1A653EC7006EFEFB /* ruby_cocos2dx_auto.hpp */,
+			);
+			name = auto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3B6BF671A3B264B007E6511 /* cocos2d_ruby_bindings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B6BF7C1A3B264B007E6511 /* Build configuration list for PBXNativeTarget "cocos2d_ruby_bindings" */;
+			buildPhases = (
+				F3B6BF641A3B264B007E6511 /* Sources */,
+				F3B6BF651A3B264B007E6511 /* Frameworks */,
+				F3B6BF661A3B264B007E6511 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cocos2d_ruby_bindings;
+			productName = cocos2d_ruby_bindings;
+			productReference = F3B6BF681A3B264B007E6511 /* libcocos2d_ruby_bindings.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3B6BF601A3B264B007E6511 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					F3B6BF671A3B264B007E6511 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = F3B6BF631A3B264B007E6511 /* Build configuration list for PBXProject "cocos2d_ruby_bindings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3B6BF5F1A3B264B007E6511;
+			productRefGroup = F3B6BF691A3B264B007E6511 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3B6BF671A3B264B007E6511 /* cocos2d_ruby_bindings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3B6BF641A3B264B007E6511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B6BF9D1A3B287A007E6511 /* BindingHelper.cpp in Sources */,
+				F3BB4CC01A653EC7006EFEFB /* ruby_cocos2dx_auto.cpp in Sources */,
+				F3BB4CC41A653EDC006EFEFB /* ManualImplement.cpp in Sources */,
+				F3B6BF9F1A3B287A007E6511 /* RubyBridge.cpp in Sources */,
+				F3BB4CBF1A653EC7006EFEFB /* ruby_cocos2dx_audioengine_auto.cpp in Sources */,
+				F3B6BFA01A3B287A007E6511 /* RubyValueMap.cpp in Sources */,
+				F3B6BF9E1A3B287A007E6511 /* CCRubyEngine.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3B6BF7A1A3B264B007E6511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../math/kazmath $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include/chipmunk $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline $(SRCROOT)/../../../../../RubyVM/src/include $(SRCROOT)/../../../../../RubyVM/src/iphone";
+			};
+			name = Debug;
+		};
+		F3B6BF7B1A3B264B007E6511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../math/kazmath $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include/chipmunk $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline $(SRCROOT)/../../../../../RubyVM/src/include $(SRCROOT)/../../../../../RubyVM/src/iphone";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3B6BF7D1A3B264B007E6511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../math/kazmath $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include/chipmunk $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline $(SRCROOT)/../../../../../ruby/ruby/include $(SRCROOT)/../../../../../ruby/ruby/iphone";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		F3B6BF7E1A3B264B007E6511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					NDEBUG,
+					USE_FILE32API,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../math/kazmath $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include/chipmunk $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline $(SRCROOT)/../../../../../ruby/ruby/include $(SRCROOT)/../../../../../ruby/ruby/iphone";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3B6BF631A3B264B007E6511 /* Build configuration list for PBXProject "cocos2d_ruby_bindings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B6BF7A1A3B264B007E6511 /* Debug */,
+				F3B6BF7B1A3B264B007E6511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B6BF7C1A3B264B007E6511 /* Build configuration list for PBXNativeTarget "cocos2d_ruby_bindings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B6BF7D1A3B264B007E6511 /* Debug */,
+				F3B6BF7E1A3B264B007E6511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3B6BF601A3B264B007E6511 /* Project object */;
+}

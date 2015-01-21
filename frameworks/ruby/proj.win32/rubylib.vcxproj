@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AB325ED1-15CE-4362-985F-2D5C9582E9AC}</ProjectGuid>
+    <RootNamespace>rubylib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\bin\$(Platform)\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>..\bin\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\ruby\.;..\ruby\include;..\ruby\win32;..\ruby\generated;..\..\wm\sqlite3;..\..\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;STATIC_LINKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\ruby\.;..\ruby\include;..\ruby\win32;..\ruby\generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;STATIC_LINKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ruby\array.c" />
+    <ClCompile Include="..\ruby\bignum.c" />
+    <ClCompile Include="..\ruby\class.c" />
+    <ClCompile Include="..\ruby\compar.c" />
+    <ClCompile Include="..\ruby\compile.c" />
+    <ClCompile Include="..\ruby\complex.c" />
+    <ClCompile Include="..\ruby\cont.c" />
+    <ClCompile Include="..\ruby\debug.c" />
+    <ClCompile Include="..\ruby\dir.c" />
+    <ClCompile Include="..\ruby\dln.c" />
+    <ClCompile Include="..\ruby\dln_find.c" />
+    <ClCompile Include="..\ruby\dmyencoding.c" />
+    <ClCompile Include="..\ruby\dmyext.c" />
+    <ClCompile Include="..\ruby\enc\encdb.c" />
+    <ClCompile Include="..\ruby\enum.c" />
+    <ClCompile Include="..\ruby\enumerator.c" />
+    <ClCompile Include="..\ruby\error.c" />
+    <ClCompile Include="..\ruby\eval.c" />
+    <ClCompile Include="..\ruby\file.c" />
+    <ClCompile Include="..\ruby\gc.c" />
+    <ClCompile Include="..\ruby\hash.c" />
+    <ClCompile Include="..\ruby\inits.c" />
+    <ClCompile Include="..\ruby\io.c" />
+    <ClCompile Include="..\ruby\iseq.c" />
+    <ClCompile Include="..\ruby\load.c" />
+    <ClCompile Include="..\ruby\marshal.c" />
+    <ClCompile Include="..\ruby\math.c" />
+    <ClCompile Include="..\ruby\numeric.c" />
+    <ClCompile Include="..\ruby\object.c" />
+    <ClCompile Include="..\ruby\pack.c" />
+    <ClCompile Include="..\ruby\proc.c" />
+    <ClCompile Include="..\ruby\process.c" />
+    <ClCompile Include="..\ruby\random.c" />
+    <ClCompile Include="..\ruby\range.c" />
+    <ClCompile Include="..\ruby\rational.c" />
+    <ClCompile Include="..\ruby\re.c" />
+    <ClCompile Include="..\ruby\regcomp.c" />
+    <ClCompile Include="..\ruby\regenc.c" />
+    <ClCompile Include="..\ruby\regerror.c" />
+    <ClCompile Include="..\ruby\regexec.c" />
+    <ClCompile Include="..\ruby\regparse.c" />
+    <ClCompile Include="..\ruby\regsyntax.c" />
+    <ClCompile Include="..\ruby\ruby.c" />
+    <ClCompile Include="..\ruby\safe.c" />
+    <ClCompile Include="..\ruby\signal.c" />
+    <ClCompile Include="..\ruby\sprintf.c" />
+    <ClCompile Include="..\ruby\st.c" />
+    <ClCompile Include="..\ruby\strftime.c" />
+    <ClCompile Include="..\ruby\string.c" />
+    <ClCompile Include="..\ruby\struct.c" />
+    <ClCompile Include="..\ruby\thread.c" />
+    <ClCompile Include="..\ruby\time.c" />
+    <ClCompile Include="..\ruby\transcode.c" />
+    <ClCompile Include="..\ruby\util.c" />
+    <ClCompile Include="..\ruby\variable.c" />
+    <ClCompile Include="..\ruby\version.c" />
+    <ClCompile Include="..\ruby\vm.c" />
+    <ClCompile Include="..\ruby\vm_dump.c" />
+    <ClCompile Include="..\ruby\generated\parse.c" />
+    <ClCompile Include="..\ruby\win32\miniprelude.c" />
+    <ClCompile Include="..\ruby\win32\newline.c" />
+    <ClCompile Include="..\ruby\win32\win32.c" />
+    <ClCompile Include="..\ruby\missing\acosh.c" />
+    <ClCompile Include="..\ruby\missing\cbrt.c" />
+    <ClCompile Include="..\ruby\missing\crypt.c" />
+    <ClCompile Include="..\ruby\missing\dup2.c" />
+    <ClCompile Include="..\ruby\missing\erf.c" />
+    <ClCompile Include="..\ruby\missing\hypot.c" />
+    <ClCompile Include="..\ruby\missing\lgamma_r.c" />
+    <ClCompile Include="..\ruby\missing\strlcat.c" />
+    <ClCompile Include="..\ruby\missing\strlcpy.c" />
+    <ClCompile Include="..\ruby\missing\tgamma.c" />
+    <ClCompile Include="..\ruby\enc\ascii.c" />
+    <ClCompile Include="..\ruby\enc\unicode.c" />
+    <ClCompile Include="..\ruby\enc\us_ascii.c" />
+    <ClCompile Include="..\ruby\enc\utf_8.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ruby\debug.h" />
+    <ClInclude Include="..\ruby\dln.h" />
+    <ClInclude Include="..\ruby\eval_intern.h" />
+    <ClInclude Include="..\ruby\gc.h" />
+    <ClInclude Include="..\ruby\id.h" />
+    <ClInclude Include="..\ruby\regenc.h" />
+    <ClInclude Include="..\ruby\regint.h" />
+    <ClInclude Include="..\ruby\regparse.h" />
+    <ClInclude Include="..\ruby\revision.h" />
+    <ClInclude Include="..\ruby\transcode_data.h" />
+    <ClInclude Include="..\ruby\version.h" />
+    <ClInclude Include="..\ruby\vm_core.h" />
+    <ClInclude Include="..\ruby\vm_opts.h" />
+    <ClInclude Include="..\ruby\win32\dir.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
