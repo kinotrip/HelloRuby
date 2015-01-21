@@ -152,3 +152,4 @@ tests/cpp-tests/Resources/audio
 /frameworks/cocos2d-x/external/xxtea/
 /frameworks/cocos2d-x/external/protobuf-lite/
 /frameworks/cocos2d-x/external/flatbuffers/
+ruby-bindings/auto/api/
