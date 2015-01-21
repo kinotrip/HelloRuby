@@ -115,26 +115,11 @@ tests/*/runtime/
 tests/*/publish/
 
 # Android
-project.properties
+# project.properties
 
 # Ignore prebuilt libraries folder
-/frameworks/cocos2d-x/external/xxhash/
-/frameworks/cocos2d-x/external/curl/
-/frameworks/cocos2d-x/external/edtaa3func/
-/frameworks/cocos2d-x/external/freetype2/
-/frameworks/cocos2d-x/external/glfw3/
-/frameworks/cocos2d-x/external/jpeg/
-/frameworks/cocos2d-x/external/json/
 /frameworks/cocos2d-x/external/linux-specific/
 /frameworks/cocos2d-x/external/lua/
-/frameworks/cocos2d-x/external/png/
-/frameworks/cocos2d-x/external/sqlite3/
-/frameworks/cocos2d-x/external/tiff/
-/frameworks/cocos2d-x/external/tinyxml2/
-/frameworks/cocos2d-x/external/unzip/
-/frameworks/cocos2d-x/external/webp/
-/frameworks/cocos2d-x/external/websockets/
-/frameworks/cocos2d-x/external/win32-specific/
 /frameworks/cocos2d-x/external/winrt-specific/
 /frameworks/cocos2d-x/external/winrt_8.1-specific/
 /frameworks/cocos2d-x/external/wp8-specific/
@@ -146,10 +131,7 @@ project.properties
 /frameworks/cocos2d-x/tools/fbx-conv/
 external/chipmunk
 tests/cpp-tests/Resources/audio
-/frameworks/cocos2d-x/external/Box2D/
-/frameworks/cocos2d-x/external/ConvertUTF/
 /frameworks/cocos2d-x/external/audio/
 /frameworks/cocos2d-x/external/xxtea/
 /frameworks/cocos2d-x/external/protobuf-lite/
-/frameworks/cocos2d-x/external/flatbuffers/
 /frameworks/cocos2d-x/cocos/scripting/ruby-bindings/auto/api/*.lua
