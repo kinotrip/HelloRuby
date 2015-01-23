@@ -1,22 +1,24 @@
-# HelloRuby
+ï»¿# HelloRuby
 Ruby binding of cocos2d-x 3.3 Final
 
-HelloRubyÊÇcocos2d-xµÄRubyÓïÑÔ°ó¶¨¡£Ä¿Ç°¿ÉÖ§³ÖµÄÆ½Ì¨ÓĞwin32/iOS/android¡£
+HelloRubyæ˜¯cocos2d-xçš„Rubyè¯­è¨€ç»‘å®šã€‚ç›®å‰å¯æ”¯æŒçš„å¹³å°æœ‰win32/iOS/androidã€‚
 
-»ùÓÚcocos2d-x 3.3 Final°æ±¾ÖĞluaÄ£°åÉú³ÉµÄ³õÊ¼¹¤³Ì¡£
+åŸºäºcocos2d-x 3.3 Finalç‰ˆæœ¬ä¸­luaæ¨¡æ¿ç”Ÿæˆçš„åˆå§‹å·¥ç¨‹ã€‚
 
-´úÂëÈë¿ÚÊÇsrc/start.rb£¬×Ô$director=CC::Director.getInstanceÕâÒ»ĞĞ¿ªÊ¼Îªruby°æ±¾µÄcocos2d-xÄ¬ÈÏ³õÊ¼½çÃæÊµÏÖ¡£
+ä»£ç å…¥å£æ˜¯src/start.rbï¼Œè‡ª$director=CC::Director.getInstanceè¿™ä¸€è¡Œå¼€å§‹ä¸ºrubyç‰ˆæœ¬çš„cocos2d-xé»˜è®¤åˆå§‹ç•Œé¢å®ç°ã€‚
 
-ÓÉÓÚwin32ÉÏµÄÔ­Éúrequire·½·¨´æÔÚÌø³öbug£¬ËùÒÔÄ¿Ç°Í¨¹ıÒ»¸öÖ´ĞĞ½Å±¾µÄÈ«¾Ö·½·¨eval_script(½Å±¾Â·¾¶)ÊµÏÖÁË×Ô¶¨ÒåµÄrequire·½·¨¡£
+ç”±äºwin32ä¸Šçš„åŸç”Ÿrequireæ–¹æ³•å­˜åœ¨è·³å‡ºbugï¼Œæ‰€ä»¥ç›®å‰é€šè¿‡ä¸€ä¸ªæ‰§è¡Œè„šæœ¬çš„å…¨å±€æ–¹æ³•eval_script(è„šæœ¬è·¯å¾„)å®ç°äº†è‡ªå®šä¹‰çš„requireæ–¹æ³•ã€‚
 
-´ËÍâÔÚIDEÄÚĞ´ruby´úÂëµÄÊ±ºò£¬¿ÉÒÔrequire×Ô¶¯Éú³ÉµÄcocos2dx_api.rbÎÄ¼şÒÔ»ñµÃÀàºÍ·½·¨ÌáÊ¾Ö§³Ö¡£ÔÚ×Ô¶¨ÒåµÄrequire·½·¨ÖĞ¸ÃÃû³ÆµÄ½Å±¾Êµ¼Ê²»»áÖ´ĞĞ¡£
+æ­¤å¤–åœ¨IDEå†…å†™rubyä»£ç çš„æ—¶å€™ï¼Œå¯ä»¥requireè‡ªåŠ¨ç”Ÿæˆçš„cocos2dx_api.rbæ–‡ä»¶ä»¥è·å¾—ç±»å’Œæ–¹æ³•æç¤ºæ”¯æŒã€‚åœ¨è‡ªå®šä¹‰çš„requireæ–¹æ³•ä¸­è¯¥åç§°çš„è„šæœ¬å®é™…ä¸ä¼šæ‰§è¡Œã€‚
 
-ÆäËû£º
+å…¶ä»–ï¼š
 
-1. ÔÚwin32»·¾³ÏÂĞŞ¸Äsrc/screen_size.txtÎÄ¼ş¿ÉÒÔµ÷Õû²âÊÔ´°¿ÚµÄ´óĞ¡¡£
+1. åœ¨win32ç¯å¢ƒä¸‹ä¿®æ”¹src/screen_size.txtæ–‡ä»¶å¯ä»¥è°ƒæ•´æµ‹è¯•çª—å£çš„å¤§å°ã€‚
 
-2. ĞŞ¸Ä
+2. ä¿®æ”¹
 		frameworks\cocos2d-x\tools\toruby
 		frameworks\cocos2d-x\tools\bindings-generator\targets\ruby
 		frameworks\cocos2d-x\cocos\scripting\ruby-bindings
-		ÖĞµÄÊµÏÖÒÔÖ§³Ö¸ü¶àµÄ°üºÍÀàĞÍ×ª»»¡£Ä¿Ç°½öÊµÏÖÁËcocos2d-x/cocos2dx_audioengineÁ½¸ö¿éµÄ×ª»»¡£
+		ä¸­çš„å®ç°ä»¥æ”¯æŒæ›´å¤šçš„åŒ…å’Œç±»å‹è½¬æ¢ã€‚ç›®å‰ä»…å®ç°äº†cocos2d-x/cocos2dx_audioengineä¸¤ä¸ªå—çš„è½¬æ¢ã€‚
+		
+3. win32å·¥ç¨‹ä½¿ç”¨VS2012ç¼–è¯‘ã€‚
