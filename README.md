@@ -19,9 +19,9 @@ HelloRuby是cocos2d-x的Ruby语言绑定。目前可支持的平台有win32/iOS/
 1. 在win32环境下修改src/screen_size.txt文件可以调整测试窗口的大小。
 
 2. 修改
-		* frameworks\cocos2d-x\tools\toruby
-		* frameworks\cocos2d-x\tools\bindings-generator\targets\ruby
-		* frameworks\cocos2d-x\cocos\scripting\ruby-bindings
-		中的实现以支持更多的包和类型转换。目前仅实现了cocos2d-x/cocos2dx_audioengine两个块的转换。
+* frameworks\cocos2d-x\tools\toruby
+* frameworks\cocos2d-x\tools\bindings-generator\targets\ruby
+* frameworks\cocos2d-x\cocos\scripting\ruby-bindings
+其中的定义以支持更多的包和类型转换。目前仅实现了cocos2d-x/cocos2dx_audioengine两个块的转换。
 		
 3. win32工程使用VS2012编译。
