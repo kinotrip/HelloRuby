@@ -1,6 +1,6 @@
 ﻿# HelloRuby
 
-HelloRuby是cocos2d-x的Ruby语言绑定。目前可支持的平台有win32/iOS/android。
+HelloRuby是cocos2d-x的Ruby语言绑定。目前初始脚本在win32/iOS/android上测试通过。
 
 基于cocos2d-x 3.3 Final版本中lua模板生成的初始工程。
 
@@ -21,6 +21,8 @@ HelloRuby是cocos2d-x的Ruby语言绑定。目前可支持的平台有win32/iOS/
      * frameworks\cocos2d-x\tools\toruby
      * frameworks\cocos2d-x\tools\bindings-generator\targets\ruby
      * frameworks\cocos2d-x\cocos\scripting\ruby-bindings
-		其中的定义以支持更多的包和类型转换。目前仅实现了cocos2d-x/cocos2dx_audioengine两个块的转换。
+     * 以上目录中的定义以支持更多的包和类型转换。目前仅实现了cocos2d-x/cocos2dx_audioengine两个块的转换。
 		
    * win32工程使用VS2012编译。
+   
+   * ruby执行器为CRuby1.9.2。
