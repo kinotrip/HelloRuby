@@ -26,3 +26,8 @@ HelloRuby是cocos2d-x的Ruby语言绑定。目前初始脚本在win32/iOS/androi
    * win32工程使用VS2012编译。
    
    * ruby执行器为CRuby1.9.2。
+   
+联系
+----------------
+kinotrip@126.com
+qq: 87132168
