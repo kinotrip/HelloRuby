@@ -1,9 +1,11 @@
 ﻿# HelloRuby
-Ruby binding of cocos2d-x 3.3 Final
 
 HelloRuby是cocos2d-x的Ruby语言绑定。目前可支持的平台有win32/iOS/android。
 
 基于cocos2d-x 3.3 Final版本中lua模板生成的初始工程。
+
+入口和说明
+----------------
 
 代码入口是src/start.rb，自$director=CC::Director.getInstance这一行开始为ruby版本的cocos2d-x默认初始界面实现。
 
@@ -11,7 +13,8 @@ HelloRuby是cocos2d-x的Ruby语言绑定。目前可支持的平台有win32/iOS/
 
 此外在IDE内写ruby代码的时候，可以require自动生成的cocos2dx_api.rb文件以获得类和方法提示支持。在自定义的require方法中该名称的脚本实际不会执行。
 
-其他：
+其他
+----------------
 
 1. 在win32环境下修改src/screen_size.txt文件可以调整测试窗口的大小。
 
