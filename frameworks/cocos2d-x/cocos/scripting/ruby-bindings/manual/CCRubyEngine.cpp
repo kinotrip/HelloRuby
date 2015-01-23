@@ -80,7 +80,7 @@ int RubyEngine::executeString(const char* codes) {
 } 
 
 int RubyEngine::executeScriptFile(const char* filename) {
-	std::string cmd("require_fix \"");
+	std::string cmd("eval_script \"");
 	cmd.append(filename);
 	cmd.append("\"");
 	return executeString(cmd.c_str());

@@ -25,8 +25,8 @@ def require(filename)
 	$__CURRENT__.pop
 
 	if !($__REQUIRED__.has_key? target_file)
-		require_fix(target_file)
-		puts "require_fix:"+target_file
+		eval_script(target_file)
+		#puts "eval_script:"+target_file
 		$__REQUIRED__[target_file]=true
 		$__CURRENT__=bakup_arr
 		return true
@@ -37,13 +37,11 @@ def require(filename)
 
 end
 
-require "base/deeper/test_b"
+require "cocos2dx_api"
+require "somelib/deeper/test_clz"
 
-testme=TestB.new
+testme=TestClass.new
 testme.say
-
-
-$director=CC::Director.getInstance
 
 class Array
     def x
@@ -61,9 +59,12 @@ class Array
 end
 
 
+$director=CC::Director.getInstance
+
+
 class HelloWorld <  CC::Layer
 
-def self.createScene
+    def self.createScene
         scene = CC::Scene.create
         layer = HelloWorld.create
         scene.addChild(layer)
@@ -93,48 +94,48 @@ def self.createScene
         menu.position=[0,0]
         addChild(menu,1)
         
-                    xrate=visibleSize.width/544.0
-                    yrate=visibleSize.height/416.0
-                    startPosition=[0,0]
-                    scale=1.0
-                    if xrate>yrate
-                        scale=yrate
-                        startPosition[0]=(visibleSize.width-544.0*scale)/2
-                        else
-                        scale=xrate
-                        startPosition[1]=(visibleSize.height-416.0*scale)/2
-                    end
-                    #puts "#{startPosition[0]},#{startPosition[1]},#{scale}"
-                    @rootNode=CC::Node.create
-                    @rootNode.anchorPoint=[0,0]
-                    @rootNode.position=startPosition
-                    @rootNode.scale=scale
-                    @rootNode.contentSize=[544,416]
-                    $screenRootNode=@rootNode
-                    addChild @rootNode
-                    
-                    @sprite=CC::Sprite.create("res/HelloWorld.png")
-                    @sprite.anchorPoint=[0.5,0.5]
-                    @sprite.position=[544/2,416/2]
-                    @rootNode.addChild(@sprite,0)
-                    
-                    @listener=CC::EventListenerTouchAllAtOnce.create
-                    @listener.onTouchesBegan=Proc.new{|event,*touches|
-                        puts "[began]"
-                        #puts event
-                        touches.each do |touch|
-                            puts touch.location
-                        end
-                    }
-                    @listener.onTouchesEnded=Proc.new{|event,*touches|
-                        puts "[ended]"
-                        #puts event
-                        puts touches.join(",")
-                    }
-                    eventDispatcher.addEventListenerWithSceneGraphPriority(@listener,self)
-                    
-                    
-                    true
+        xrate=visibleSize.width/544.0
+        yrate=visibleSize.height/416.0
+        startPosition=[0,0]
+        scale=1.0
+        if xrate>yrate
+            scale=yrate
+            startPosition[0]=(visibleSize.width-544.0*scale)/2
+            else
+            scale=xrate
+            startPosition[1]=(visibleSize.height-416.0*scale)/2
+        end
+        #puts "#{startPosition[0]},#{startPosition[1]},#{scale}"
+        @rootNode=CC::Node.create
+        @rootNode.anchorPoint=[0,0]
+        @rootNode.position=startPosition
+        @rootNode.scale=scale
+        @rootNode.contentSize=[544,416]
+        $screenRootNode=@rootNode
+        addChild @rootNode
+
+        @sprite=CC::Sprite.create("res/HelloWorld.png")
+        @sprite.anchorPoint=[0.5,0.5]
+        @sprite.position=[544/2,416/2]
+        @rootNode.addChild(@sprite,0)
+
+        @listener=CC::EventListenerTouchAllAtOnce.create
+        @listener.onTouchesBegan=Proc.new{|event,*touches|
+            puts "[began]"
+            #puts event
+            touches.each do |touch|
+                puts touch.location
+            end
+        }
+        @listener.onTouchesEnded=Proc.new{|event,*touches|
+            puts "[ended]"
+            #puts event
+            puts touches.join(",")
+        }
+        eventDispatcher.addEventListenerWithSceneGraphPriority(@listener,self)
+
+        true
+
         end
 end
 

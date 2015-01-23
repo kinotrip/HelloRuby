@@ -434,7 +434,7 @@ RBVAL rb_cocos2dx_Director_end(int argc, RBVAL *argv, RBVAL self)
 
 extern "C" RBVAL rb_eval_script_string(const char *scriptString,const char * scriptPath);
 
-RBVAL rb_f_require_fix(RBVAL obj, RBVAL fname)
+RBVAL rb_f_eval_script(RBVAL obj, RBVAL fname)
 {
 	bool ok=true;
 	const char * filename=rb_string_to_char_ptr(fname,ok);
@@ -456,5 +456,5 @@ void manual_implement(){
     rb_define_method_bridge(director_class,"endDirector",RB_FUNC(rb_cocos2dx_Director_end));
 	rb_register_cocos2dx_menuitem_create();
 
-	rb_define_global_function_bridge("require_fix",RB_FUNC(rb_f_require_fix),1);
+	rb_define_global_function_bridge("eval_script",RB_FUNC(rb_f_eval_script),1);
 }

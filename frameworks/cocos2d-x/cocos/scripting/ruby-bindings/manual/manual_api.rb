@@ -79,5 +79,5 @@ module CC
 	end
 end
 
-def require_fix(filename)
+def eval_script(filename)
 end
